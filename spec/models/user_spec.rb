@@ -18,6 +18,7 @@ describe User do
   it { should respond_to(:admin) }
   it { should respond_to(:authenticate) }
   it { should respond_to(:microposts) }
+  it { should respond_to(:feed) }
 
   it { should be_valid }
   it { should_not be_admin }
@@ -28,6 +29,12 @@ describe User do
         User.new(admin: "1")
       end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
     end
+  end
+
+  describe "with admin attribute set to 'true'" do
+    before { @user.toggle!(:admin) }
+
+    it { should be_admin }
   end
 
   describe "when name is not present" do
