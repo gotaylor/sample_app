@@ -52,7 +52,8 @@ h2 {
 	font-size: 1.7em;
 	letter-spacing: -1px;
 	margin-bottom: 30px;
-	text-align: normal;
+	text-align: center;
+	font-weight: normal;
 	color: $grayLight;
 }
 
@@ -94,11 +95,11 @@ footer {
 		}
 	}
 	small {
-	float: left;
+	  float: left;
 	}
 	ul {
-	float: right;
-	list-style: none;
+	  float: right;
+	  list-style: none;
 		li {
 		float: left;
 		margin-left: 10px;
@@ -117,6 +118,7 @@ footer {
 }
 
 /* sidebar */
+
 aside {
 	section{
 		padding: 10px 0;
@@ -135,7 +137,11 @@ aside {
 			text-align: left;
 			letter-spacing: -1px;
 			margin-bottom: 3px;
+<<<<<<< HEAD
 			margin-top 0px;
+=======
+			margin-top: 0px;
+>>>>>>> 533c4803a407b0fe286af17163b7e5e2aad7c54e
 		}
 	}
 }
@@ -204,7 +210,7 @@ input {
 /* users index */
 
 .users {
-	list-stile: none;
+	list-style: none;
 	margin: 0;
 	li {
 		overflow: auto;
@@ -219,28 +225,34 @@ input {
 /* microposts */
 
 .microposts {
-	list-style: none;
-	margin: 10px 0 0 0;
+  list-style: none;
+  margin: 10px 0 0 0;
 
+<<<<<<< HEAD
 	li {
 		padding: 10px 0;
 		border-top: 1px solid #e8e8e8;
 	}
+=======
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+>>>>>>> 533c4803a407b0fe286af17163b7e5e2aad7c54e
 }
 .content {
-	display: block;
+  display: block;
 }
 .timestamp {
-	color: $grayLight;
+  color: $grayLight;
 }
 .gravatar {
-	float: left;
-	margin-right: 10px;
+  float: left;
+  margin-right: 10px;
 }
 aside {
-	textarea {
-		height: 100px;
-		margin-bottom: 5px;
-	}
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
 }
-
